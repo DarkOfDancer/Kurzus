@@ -1,3 +1,12 @@
 h2 {
     color: rgb(120, 120, 182);
 }
+
+.boxmodel {
+    border: 5px solid blueviolet;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    width: 30px;
+    height: 30px;
+}
