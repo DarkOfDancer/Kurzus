@@ -1,0 +1,41 @@
+* {
+    text-align: right;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/2123573/pexels-photo-2123573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size:cover;
+}
+h2 + p:hover {
+color:#AA4139;
+text-align: center;
+border: 5px solid rgb(50, 78, 80, 1);
+cursor: pointer;
+}
+
+p{
+    color:pink !important;
+}
+p{
+    color:green ;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext:first-child {
+    border: 5px dashed rgb(139, 204, 139);
+}
+
+.active{
+    color: red;
+}
+
+#div1{
+    background: skyblue;
+}
+#div2{
+    background: pink;
+}
