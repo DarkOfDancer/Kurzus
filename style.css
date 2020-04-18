@@ -1,53 +1,19 @@
-* {
-    text-align: right;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-body{
-    background-image: url(https://images.pexels.com/photos/294674/pexels-photo-294674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-repeat: inherit;
-    background-size:  cover;
-}
-p {
-color:#AA4139;
-text-align: center;
-border: 5px solid rgb(50, 78, 80, 1);
-cursor: pointer;
-}
-
-p{
-    line-height: 40px;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 150%;
-    font-family: 'Abril Fatface', cursive;
-    color:white ;
-}
-
-img{
-    float: right;
-}
-
-footer{
-    clear: both;
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid rgb(233, 199, 137);
+    border-right: 2px solid rgb(233, 199, 137);
+    width: 400px;
     text-align: center;
 }
-
-li{
-    list-style: none;
-    display: inline-block;
-}
-
-.webtext:first-child {
-    border: 5px dashed rgb(139, 204, 139);
-}
-
-.active{
-    color: red;
-}
-
-#div1{
-    background: skyblue;
-}
-#div2{
-    background: pink;
+img{
+    width: 450px;
+    height: 300px;
+    margin: 10px;;
 }
