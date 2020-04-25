@@ -73,7 +73,7 @@ console.log(list[1][1]);
 
 var list= ["tiger","cat","bear","bird"];
 
-
+//////5TH PART
 
 var user = {
     name:"John Winchester",
@@ -97,7 +97,8 @@ var list=[
     }
 
 ];
-*/
+
+//////6TH PART
 
 var datas = {
     username:"Sofia",
@@ -125,6 +126,8 @@ var newsfeed= [
     }
 ];
 
+//////7TH PART
+
 var userNamePrompt= prompt("What's your username?");
 var passwordPrompt= prompt("What's your password");
 
@@ -139,3 +142,41 @@ function signIn(user, pass) {
 };
 
 signIn(userNamePrompt,passwordPrompt);
+
+//////8TH PART
+
+//function declaration
+function newFunctoin(){
+
+}
+
+//function expression
+var newFunctoin= function() {
+
+};
+
+//expression
+1+3;
+var a= 2;
+return true;
+
+//calling or invoking a function
+alert()
+newFunctoin(param1, param2);
+
+//assign a variable
+var a = true;
+
+//function vs method
+function thisIsAFunction(){
+
+}
+
+var abj= {
+    thisIsAMethod: function(){
+        
+    }
+}
+
+thisIsAFunction()
+obj.thisIsAMethod()*/
