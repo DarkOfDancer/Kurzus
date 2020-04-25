@@ -97,7 +97,7 @@ var list=[
     }
 
 ];
-
+*/
 //////6TH PART
 
 var datas = {
@@ -126,23 +126,41 @@ var newsfeed= [
     }
 ];
 
+
+
 //////7TH PART
 
 var userNamePrompt= prompt("What's your username?");
 var passwordPrompt= prompt("What's your password");
 
+function isUserValid(user, pass) {
+    for(var i=0; i <database.length; i++) {
+         if(user === database[i].username && 
+         pass === database[i].password){
+             return true;
+         }else{
+             return false;
+         }
+     }    
+}
+
+
+
 function signIn(user, pass) {
-    if(user === database[0].username && 
+    console.log(isUserValid(user, pass));
+    /*for(var i=0; i <database.length; i++) {
+        if(user === database[0].username && 
         pass === database[0].password){
             console.log(newsfeed)
         }else{
             alert("Sorry, wrong username or password!")
         }
-
+    } */   
 };
 
 signIn(userNamePrompt,passwordPrompt);
 
+/*
 //////8TH PART
 
 //function declaration
@@ -179,7 +197,7 @@ var abj= {
 }
 
 thisIsAFunction()
-obj.thisIsAMethod()*/
+obj.thisIsAMethod()
 
 var todos =[
     "clean room",
@@ -229,5 +247,5 @@ var counterTwo =10;
 do {
     console.log(counterTwo);
     counterTwo--;
-}while(counterTwo > 0);*/
-
+}while(counterTwo > 0);
+*/
