@@ -180,3 +180,54 @@ var abj= {
 
 thisIsAFunction()
 obj.thisIsAMethod()*/
+
+var todos =[
+    "clean room",
+    "brush teeth",
+    "exercise",
+    "study javascript",
+    "stay healthy"
+];
+
+var todosImportant =[
+    "clean room!",
+    "brush teeth!",
+    "exercise!",
+    "study javascript!",
+    "stay healthy!"
+];
+
+var todosLenght = todos.length;
+
+function logTodos(todo, i){
+    console.log(todo, i);
+}
+
+todos.forEach(logTodos);
+todosImportant.forEach(logTodos);
+
+
+for(var i=0; i < todosLenght; i++) {
+    console.log(todos[i], i);
+    //console.log(todos[i]+"!");
+    //todos[i]= todos[i]+"!";
+    //todos.pop();
+}
+
+todos.forEach(function(todo, i) {
+    console.log(todo, i);
+})
+
+
+var counterOne= 0;
+while (counterOne <10) {
+    console.log(counterOne);
+    counterOne++;
+}
+
+var counterTwo =10;
+do {
+    console.log(counterTwo);
+    counterTwo--;
+}while(counterTwo > 0);*/
+
