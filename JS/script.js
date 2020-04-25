@@ -98,3 +98,29 @@ var list=[
 
 ];
 */
+
+var datas = {
+    username:"Sofia",
+    password:"secret",
+}
+
+var database= [
+    {
+        username:"Sofia",
+        password:"secret",
+    }
+];
+var newsfeed= [
+    {
+        username:"Sofia",
+        timeline:"loved",
+    }
+    {
+        username:"Marcell",
+        timeline:"loved",
+    }
+    {
+        username:"Kriztan",
+        timeline:"notloved",
+    }
+];
