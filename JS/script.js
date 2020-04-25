@@ -73,4 +73,28 @@ console.log(list[1][1]);
 
 var list= ["tiger","cat","bear","bird"];
 
+
+
+var user = {
+    name:"John Winchester",
+    age:"34",
+    hobby:"Killing monsters",
+    isMarried: true,
+    spells: ["abrakadabra","shazam","boo"],
+    shout: function(){
+        console.log("AAAHHHHH!");
+    }
+};
+
+var list=[
+    {
+    username:"Karol",
+    password:"secret",
+    },
+    {
+        username:"Billy",
+        password:"cisco",
+    }
+
+];
 */
