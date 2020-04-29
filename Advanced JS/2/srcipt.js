@@ -88,7 +88,7 @@ const obj = {
     experience: 100,
     wizardlevel:false,
 }
-*/
+
 //Destructuring
 
 const obj = {
@@ -103,3 +103,52 @@ let wizardlevel= obj.wizardlevel;
 
 const {player, experience} = obj;
 let {wizardlevel} = obj;
+
+const name= 'John Winchester';
+
+const obj = {
+    [name]: 'hello',
+    [1+2]:'hello'
+}
+
+
+const a= "Simon";
+const b= true;
+const c={};
+
+const obj = {
+    a,
+    b,
+    c
+}
+
+
+//Templete strings
+
+const name= "Sally";
+const age = 34;
+const pet= "horse";
+const greeting = "Hello"+ name+ "you seem to be doing"+ greeting +"!";
+
+const greetingBest= `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have!`;
+
+//default aguments
+
+function greet(name='', age=30, pet='cat'){
+    return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have!`
+};
+
+
+var sym1 = Symbol();
+var sym2= Symbol('foo');
+var sym3= Symbol('foo');
+
+
+//arrow function
+
+function add(a,b) {
+    return a+b;
+}
+
+const add2 = (a,b) => a+b;
+*/
