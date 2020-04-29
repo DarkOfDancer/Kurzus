@@ -50,7 +50,7 @@ function condition() {
 }
 
 var answer2 = condition();
-*/
+
 
 function moveCommand(direction) {
     var whatHappens;
@@ -71,3 +71,35 @@ function moveCommand(direction) {
             whatHappens = "Please enter a valid direction";
     }return whatHappens;
 }
+
+
+//let + const
+
+const player = 'bobby'; //const: can't change
+let experience = 100; //let: can change
+let wizardlevel= false;
+
+if (experience > 90) {
+    let wizardlevel= true;
+}
+
+const obj = {
+    player:'boby',
+    experience: 100,
+    wizardlevel:false,
+}
+*/
+//Destructuring
+
+const obj = {
+    player:'boby',
+    experience: 100,
+    wizardlevel:false,
+}
+
+const player = obj.player;
+const experience= obj.experience;
+let wizardlevel= obj.wizardlevel;
+
+const {player, experience} = obj;
+let {wizardlevel} = obj;
