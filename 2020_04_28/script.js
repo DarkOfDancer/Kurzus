@@ -6,35 +6,32 @@ document.addEventListener("mouseenter"mouseleaver, function() {
 })
 */
 var button = document.getElementById("enter");
-var input= document.getElementById("userinput");
+var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
-function inputLenght() {
-    return input.value.lenght;
+function inputLength() {
+	return input.value.length;
 }
 
-function creatListElement(){
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input.value))
-    ul.appendChild(li);
-    input.value= ""; 
+function createListElement() {
+	var li = document.createElement("li");
+	li.appendChild(document.createTextNode(input.value));
+	ul.appendChild(li);
+	input.value = "";
 }
 
 function addListAfterClick() {
-    if (inputLEnght() > 0) {
-        creatListElement();
-    }
+	if (inputLength() > 0) {
+		createListElement();
+	}
 }
 
 function addListAfterKeypress(event) {
-    if (inputLenght()> 0 && event.keyCode === 13) {
-        creatListElement();
-    }
+	if (inputLength() > 0 && event.keyCode === 13) {
+		createListElement();
+	}
 }
 
-button.addEventListener("click", addListAfterClick
-   // console.log("Click is working!");
-   //console.log(input.value);
-);
+button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
