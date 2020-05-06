@@ -151,4 +151,53 @@ function add(a,b) {
 }
 
 const add2 = (a,b) => a+b;
+
+const pets = ['cat', 'dog','bat'];
+pets.includes('dog');
+
+const square = (x) => x**2
+const cube = (y) => y**3
+
+'Turtle'.padStart(10);
+.padEnd();
+
+const fun = (a,b,c,d,) => {
+    console.log(a);
+}
+
+fun(1,2,3,4)
+
+Object.values
+Object.entries
+Object.keys
+
+let obj = {
+    username0: 'Santa',
+    username1: 'Rudolf',
+    username2: 'Mr.Grinch'
+}
+
+Object.keys(obj).forEach((key, index) => {
+    console.log(key, obj[key]);
+})
+
+Object.values(obj).forEach(value => {
+    console.log(value);
+})
+
+Object.entries(obj).forEach(value => {
+    console.log(value);
+})
+
+Object.entries(obj).map(value => {
+    return value[1] +value[0].replace('username', '');
+})
 */
+//E10
+const array = [1,2,3,4,5];
+array.flat();
+
+const email = '                a@gmail.com';
+const email1 ='b@email.com                ';
+console.log(email.trimStart());
+console.log(email1.trimEnd());
