@@ -192,7 +192,7 @@ Object.entries(obj).forEach(value => {
 Object.entries(obj).map(value => {
     return value[1] +value[0].replace('username', '');
 })
-*/
+
 //E10
 const array = [1,2,3,4,5];
 array.flat();
@@ -201,3 +201,78 @@ const email = '                a@gmail.com';
 const email1 ='b@email.com                ';
 console.log(email.trimStart());
 console.log(email1.trimEnd());
+
+const basket =['apple','pearl','orange'];
+const detailesBasket = {
+    apple: 5,
+    pearl: 10,
+    orange:1000
+}
+
+basket = {
+    0: 'apple',
+    1: 'pearl',
+    2: 'orange'
+}
+
+//for
+for (let i = 0; i < basket.length; i++) {
+    console.log(basket[i]);
+}
+//forEach
+basket.forEach(item => {
+    console.log(item);
+})
+//for of
+for (item of basket){
+    console.log(item);
+}
+//Iterating - arrays, strings
+for (item of 'basket'){ //basket betűit írja ki!
+    console.log(item);
+}
+//for in - properties
+//enumerating - object
+for(item in detailesBasket){
+    console.log(item);
+}
+
+const a = 1;
+
+//call stack
+console.log('1');
+console.log('2');
+console.log('3');
+
+const one = () => {
+    const two = () => {
+        console.log('4');
+    }
+    two();
+}
+
+//Recursion
+function foo(){
+    foo();
+}
+foo();
+
+//call stack
+console.log('1');
+setTimeout(()=> {
+    console.log('2');
+},0)
+console.log('3');
+
+//Call stack
+
+setTimeout(), 2000
+//web api
+callback();
+//callback queue
+
+//Event loop
+element.addEventListener('click', ()=>{
+    console.log('click');
+})
+*/
