@@ -275,4 +275,14 @@ callback();
 element.addEventListener('click', ()=>{
     console.log('click');
 })
+
+//webpack
+module.exoports ={
+    entry: './app/main.js',
+    output: {
+        path: './dist',
+        filename: 'bundle.js'
+    }
+    
+}
 */
